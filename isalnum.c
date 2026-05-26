@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   isalnum.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/21 17:16:17 by alesferr          #+#    #+#             */
-/*   Updated: 2026/05/21 18:33:53 by alesferr         ###   ########.fr       */
+/*   Created: 2026/05/21 18:45:56 by alesferr          #+#    #+#             */
+/*   Updated: 2026/05/21 18:52:51 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
+#include "libft.h"
 
-# define LIBFT_H
-
-#include <unistd.h>
-#include <stdlib.h>
-
-int ft_isalpha(char c);
-
-#endif
+int ft_isalnum(char c)
+{
+    return 
+}
