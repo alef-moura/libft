@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isalnum.c                                          :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/21 18:45:56 by alesferr          #+#    #+#             */
-/*   Updated: 2026/05/21 18:52:51 by alesferr         ###   ########.fr       */
+/*   Created: 2026/05/27 14:41:13 by alesferr          #+#    #+#             */
+/*   Updated: 2026/05/27 16:28:13 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
-int ft_isalnum(char c)
+int ft_isalpha(int c)
 {
-    return 
+    if ((c >= 'a' &&  c <= 'z') || (c >= 'A' && c <= 'Z'))
+        return(1);
+    return(0);
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+    printf("%d", ft_isalpha('@'));
+    return(0);
 }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/21 17:16:17 by alesferr          #+#    #+#             */
-/*   Updated: 2026/05/21 18:33:53 by alesferr         ###   ########.fr       */
+/*   Created: 2026/05/27 15:13:10 by alesferr          #+#    #+#             */
+/*   Updated: 2026/05/27 15:20:29 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 # define LIBFT_H
 
-#include <unistd.h>
-#include <stdlib.h>
+# include <stdio.h>
 
-int ft_isalpha(char c);
+int	ft_isalnum(char c);
+int...
 
-#endif
+
+#endif /*para finalizar a biblioteca*/

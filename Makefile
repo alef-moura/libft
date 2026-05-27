@@ -5,24 +5,34 @@
 #                                                     +:+ +:+         +:+      #
 #    By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/05/21 18:35:25 by alesferr          #+#    #+#              #
-#    Updated: 2026/05/21 18:56:01 by alesferr         ###   ########.fr        #
+#    Created: 2026/05/27 15:22:33 by alesferr          #+#    #+#              #
+#    Updated: 2026/05/27 16:19:11 by alesferr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-CFLAGS = -Wall -Wextra -Werror
-AR = ar -rcs
-SRCS = ft_bzero.c ft_islnum.c ft_isalpha.c ft_isascii.c \
-		ft_isdigit.c ft_memcpy.c ft_memset.c ft_strlen.c \
-		ft_memmove
+SRC = 	ft_isalpha.c
+		
+OBJ = $(SRC:.c=.o)
+FLAGS = -Wall -Wextra -Werror
+CC = cc
 
-OBJS = $(SRCS:.c*.o)
+AR = ar -rcs
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJ)
+	$(AR) $(NAME) $(OBJ)
 
-%.o: %.c
-	$(AR) $(CFLAGS) -C $< -0 $
+%.o:%.c
+	$(CC) $(FLAGS) $(OBJ)
+	
+clean: 
+	rm -f $(OBJ)
+
+fclean: clean
+	rm -f $(NAME)
+
+re:
+
+.PHONY: all clean fclean re
