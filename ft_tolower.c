@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/27 14:41:13 by alesferr          #+#    #+#             */
-/*   Updated: 2026/05/28 15:07:37 by alesferr         ###   ########.fr       */
+/*   Created: 2026/05/28 13:44:11 by alesferr          #+#    #+#             */
+/*   Updated: 2026/05/28 15:43:55 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//verifica se é letra alfabética
-int	ft_isalpha(int c)
+//transforma em minúsculas
+int	ft_tolower(int c)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	if (c >= 65 && c <= 90)
+	{
+		c = c + 32;
+	}
+	return (c);
 }
-/*
-#include <stdio.h>
+
+/*#include <stdio.h>
 
 int main(void)
 {
-    printf("%d", ft_isalpha('@'));
-    return(0);
+    printf("%c", ft_tolower('A'));
+    return (0);
 }*/

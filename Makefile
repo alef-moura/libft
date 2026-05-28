@@ -6,13 +6,15 @@
 #    By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/27 15:22:33 by alesferr          #+#    #+#              #
-#    Updated: 2026/05/27 16:19:11 by alesferr         ###   ########.fr        #
+#    Updated: 2026/05/28 17:45:52 by alesferr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-SRC = 	ft_isalpha.c
-		
+SRC = 	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
+		ft_toupper.c ft_tolower.c \
+		ft_strlen.c 
+				
 OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
 CC = cc
