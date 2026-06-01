@@ -1,32 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/28 11:37:32 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/01 15:24:57 by alesferr         ###   ########.fr       */
+/*   Created: 2026/06/01 13:07:55 by alesferr          #+#    #+#             */
+/*   Updated: 2026/06/01 15:50:56 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Retorna o tamanho da string
-size_t	ft_strlen(const char *s)
+//preenche memória com um valor
+void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t	counter;
+	unsigned char	*s1;
+	size_t			i;
 
-	counter = 0;
-	while (s[counter] != '\0')
-		counter++;
-	return (counter);
+	s1 = (unsigned char *) b;
+	i = 0;
+	while (i < len)
+	{
+		s1[i] = (unsigned char) c;
+		i++;
+	}
+	return (b);
 }
 
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 
 int	main(void)
 {
-	printf("%zu", ft_strlen("Hello"));
-	return (0);
+	char	str[5] = "oie!";
+	printf("Antes: %s\n", str);
+	
+	ft_memset(str, '#', 2);
+	printf("Depois: %s\n", str);
 }*/

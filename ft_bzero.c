@@ -1,32 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/28 11:37:32 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/01 15:24:57 by alesferr         ###   ########.fr       */
+/*   Created: 2026/06/01 15:51:29 by alesferr          #+#    #+#             */
+/*   Updated: 2026/06/01 17:28:40 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Retorna o tamanho da string
-size_t	ft_strlen(const char *s)
+//zera a memória
+void	ft_bzero(void *s, size_t n)
 {
-	size_t	counter;
+	unsigned char	*b;
+	size_t			i;
 
-	counter = 0;
-	while (s[counter] != '\0')
-		counter++;
-	return (counter);
+	b = (unsigned char *) s;
+	i = 0;
+	while (i < n)
+	{
+		b[i] = 0;
+		i++;
+	}
 }
 
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 
 int	main(void)
 {
-	printf("%zu", ft_strlen("Hello"));
-	return (0);
+	char	b[10];
+	size_t	i;
+
+	strcpy(b, "hello");
+	printf("Antes do ft_bzero: %s \n", b);
+
+	ft_bzero(b, 2);
+	printf("Depois do ft_bzero: \n");
 }*/

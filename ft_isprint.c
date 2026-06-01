@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 11:14:10 by alesferr          #+#    #+#             */
-/*   Updated: 2026/05/28 15:41:21 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:10:44 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int	ft_isprint(int c)
 
 int main(void)
 {
-    printf("%d", ft_isprint(3));
+    printf("%d", ft_isprint(125));
     return (0);
 }*/
