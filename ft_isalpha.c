@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 14:41:13 by alesferr          #+#    #+#             */
-/*   Updated: 2026/05/28 15:07:37 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/02 15:56:35 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ int	ft_isalpha(int c)
 {
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
-/*
-#include <stdio.h>
+
+/*#include <stdio.h>
 
 int main(void)
 {

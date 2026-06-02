@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:13:10 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/01 17:27:26 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/02 16:57:27 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ size_t	ft_strlen(const char *s);
 //Preencher ou zerar memória
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_bzero(void *s, size_t n);
-
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
 // para finalizar a biblioteca*/
 #endif

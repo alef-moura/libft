@@ -1,30 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/01 17:21:38 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/02 12:21:07 by alesferr         ###   ########.fr       */
+/*   Created: 2026/06/02 12:21:27 by alesferr          #+#    #+#             */
+/*   Updated: 2026/06/02 16:54:07 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Copia memória
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+//Copia memoria com segurança em areas sobrepostas
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*pd;
-	unsigned char	*ps;
+	unsigned char	*pdest;
+	unsigned char	*psrc;
+	size_t			i;
 
 	if (!dest && !src)
 		return (NULL);
-	pd = (unsigned char *) dest;
-	ps = (unsigned char *) src;
-	while (n > 0)
+	pdest = (unsigned char *) dest;
+	psrc = (unsigned char *) src;
+	i = 0;
+	if (dest > src)
 	{
-		*pd++ = *ps++;
-		n--;
+		while (n-- > 0)
+			pdest[n] = psrc[n];
+	}
+	else
+	{
+		while (i < n)
+		{
+			pdest[i] = psrc[i];
+			i++;
+		}
 	}
 	return (dest);
 }
