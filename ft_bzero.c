@@ -30,12 +30,12 @@ void	ft_bzero(void *s, size_t n)
 
 int	main(void)
 {
-	char	b[10];
-	size_t	i;
-
-	strcpy(b, "hello");
-	printf("Antes do ft_bzero: %s \n", b);
-
-	ft_bzero(b, 2);
-	printf("Depois do ft_bzero: \n");
+	//String com texto dentro
+	char	text[10] = "hello!";
+	
+	printf("Antes da funcao: %s \n", text);
+	//chamando a funcao para zerar os 2 primeiros bytes
+	ft_bzero(text, 2);
+	printf("Depois da funcao: %s \n", &text[2]);
+	return (0);
 }*/

@@ -38,3 +38,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	text[20] = "abcdefg";
+
+	printf("Antes: %s\n", text);
+
+	ft_memmove(text + 2, text, 2);
+
+	printf("Depois: %s\n", text);
+
+	return (0);
+}*/

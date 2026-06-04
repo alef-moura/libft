@@ -28,3 +28,16 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	org[] = "hello!";
+	char	dest[10];
+
+	ft_memcpy(dest, org, 3);
+	dest[3] = '\0';
+	printf("Origem: %s \nDestino: %s \n", org, dest);
+	return (0);
+}*/
