@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alesferr <alesferr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:13:10 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/02 16:57:27 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/04 18:10:49 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 //funções de strings
 size_t	ft_strlen(const char *s);
-
+size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
 //Preencher ou zerar memória
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);

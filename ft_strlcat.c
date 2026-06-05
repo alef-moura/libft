@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/28 13:27:38 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/04 18:11:55 by alesferr         ###   ########.fr       */
+/*   Created: 2026/06/04 13:35:10 by alesferr          #+#    #+#             */
+/*   Updated: 2026/06/04 21:27:15 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Transforma em maiúscula
-int	ft_toupper(int c)
+//junta duas strings com seguranca
+size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	if (c >= 97 && c <= 122)
-		c = c - 32;
-	return (c);
+    size_t  dst_len;
+    size_t  i;
+
+    dst_len = 0;
+    while (dest[dst_len] =! '\0')
+    {
+        dst_len++;
+    }
+    i = 0;
+    while (src[i] != '\0')
+    {
+        *dest = *dest + *src;
+        i++;
+    }
 }
-
-/*#include <stdio.h>
-
-int main(void)
-{
-    printf("%c", ft_toupper('a'));
-    return (0);
-}*/
