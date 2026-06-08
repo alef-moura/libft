@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:13:10 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/04 18:10:49 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/05 10:58:08 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,13 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 //funções de strings
 size_t	ft_strlen(const char *s);
-size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 //Preencher ou zerar memória
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
+
+#endif 
 // para finalizar a biblioteca*/
-#endif
