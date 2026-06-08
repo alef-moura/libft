@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/07 13:39:36 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/07 14:32:20 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/08 17:29:23 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,26 @@
 int	ft_atoi(const char *str)
 {
 	int	i;
-	int	sinal;
-	int	resultado;
+	int	sl;
+	int	rt;
 
 	i = 0;
-	sinal = 1;
-	resultado = 0;
+	sl = 1;
+	rt = 0;
 	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-			sinal = -1;
+			sl = -1;
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		resultado = (resultado * 10) + (str[i] - '0');
+		rt = (rt * 10) + (str[i] - '0');
 		i++;
 	}
-	return (resultado * sinal);
+	return (rt * sl);
 }
 
 /*#include <stdio.h>

@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:13:10 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/05 10:58:08 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/08 18:23:09 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,38 @@
 # define LIBFT_H
 
 # include <stdio.h>
-//funções de verificação de caracteres
+# include <unistd.h>
+# include <stdlib.h>
+
+//Verificação de Caracteres
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
-//funções de conversão de caracteres
+//Conversão de Caracteres
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-//funções de strings
+//Manipulação de Strings
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-//Preencher ou zerar memória
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+int		ft_atoi(const char *str);
+//Manipulação de Memória Pura
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
-
-#endif 
-// para finalizar a biblioteca*/
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+//Alocação Dinâmica
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_strdup(const char *s1);
+//PARTE 2
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+#endif // para finalizar a biblioteca*/
