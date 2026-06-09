@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 15:13:10 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/08 18:23:09 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/09 18:38:22 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,7 @@ char	*ft_strdup(const char *s1);
 //PARTE 2
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+
+void	ft_putchar_fd(char c, int fd);
 #endif // para finalizar a biblioteca*/

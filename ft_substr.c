@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:57:31 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/08 17:52:13 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/09 11:02:24 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Extrai uma parte especifica de um texto
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	s_len;
