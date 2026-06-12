@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/07 14:33:29 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/08 13:07:23 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/11 18:55:25 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,11 @@ void	*ft_calloc(size_t count, size_t size)
 
 	if (count != 0 && size > (size_t)-1 / count)
 		return (NULL);
+	if (count == 0 || size == 0)
+	{
+		count = 1;
+		size = 1;
+	}
 	total_size = count * size;
 	p = malloc(total_size);
 	if (p == NULL)
@@ -29,7 +34,6 @@ void	*ft_calloc(size_t count, size_t size)
 }
 
 /*#include <stdio.h>
-#include <stdlib.h>
 
 int	main(void)
 {
@@ -38,7 +42,6 @@ int	main(void)
 	int	i;
 
 	tamanho = 4;
-	printf("--- TESTE 1: ALOCAÇÃO NORMAL E LIMPEZA ---\n");
 
 	// Solicitando espaço para 4 inteiros (4 * 4 bytes = 16 bytes)
 	array = (int *)ft_calloc(tamanho, sizeof(int));
@@ -56,7 +59,7 @@ int	main(void)
 		printf("Posicao [%d]: %d (Esperado: 0)\n", i, array[i]);
 		i++;
 	}
-	
+
 	// Sempre liberar a memória alocada com sucesso!
 	free(array);
 	printf("Memoria do Teste 1 liberada.\n\n");
