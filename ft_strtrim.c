@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/09 10:52:10 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/09 11:54:01 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/12 16:22:45 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Apara(corta) as bordas de uma string
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;

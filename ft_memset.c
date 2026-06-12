@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 13:07:55 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/04 18:13:31 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/12 17:34:52 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ int	main(void)
 	char	str[5] = "oie!";
 	printf("Antes: %s\n", str);
 	
-	ft_memset(str, '#', 2);
+	ft_memset(str, '#', 1);
 	printf("Depois: %s\n", str);
 }*/

@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/07 14:33:29 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/11 18:55:25 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/12 17:35:05 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	main(void)
 	tamanho = 4;
 
 	// Solicitando espaço para 4 inteiros (4 * 4 bytes = 16 bytes)
-	array = (int *)ft_calloc(tamanho, sizeof(int));
+	array = (int *)ft_calloc(tamanho, sizeof(long int));
 
 	if (array == NULL)
 	{
