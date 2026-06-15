@@ -1,6 +1,6 @@
 *This project has been created as part of the 42 curriculum by alesferr.*
 
-# Libft - Your very first own library
+# Libft
 
 ## Description
 The Libft project involves coding a custom C library that replicates a wide range of general-purpose standard functions from the C standard library (libc), along with additional utility functions. 
@@ -25,7 +25,7 @@ Functions designed to extend the basic capabilities of the standard library, foc
 * **Functional Mapping:** `ft_strmapi`, `ft_striteri`.
 * **File Descriptor Outputs:** `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`.
 
-### 3. Linked List Functions (Part 3 - Bonus)
+### 3. Linked List Functions (Part 3)
 A set of functions dedicated to manipulating structures and dynamic linear collections using a custom list container (`t_list`):
 * `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`.
 
@@ -44,10 +44,6 @@ The project includes a `Makefile` that handles compiling the source files into t
 * **Compile the mandatory functions:**
 ```bash
   make
-  ```
-* **Compile the linked list bonus functions:**
-```bash
-  make bonus
   ```
 * **Remove the generated object files (`.o`):**
 ```bash
