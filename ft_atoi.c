@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/07 13:39:36 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/08 17:29:23 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/14 13:42:36 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Converte string para inteiro (char * em int)
+//Converte string para inteiro (char * em int) [-0]
 int	ft_atoi(const char *str)
 {
 	int	i;
