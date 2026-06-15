@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 13:35:10 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/10 15:35:00 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/15 17:07:54 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//junta duas strings com seguranca
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	dst_len;
@@ -35,22 +35,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char	dst[10] = "Ola";
-	char	*src = "Mundo";
-	size_t	buffer = 10;
-	size_t retorno;
-
-	printf("dst inicial: %s \n", dst);
-	printf("src inicial: %s \n", src);
-	printf("Buffer: %zu \n", buffer);
-
-	retorno = ft_strlcat(dst, src, buffer);
-	printf("dst final: %s \n", dst);
-	printf("valor retornado pela função: %zu \n", retorno);
-	return (0);
-}*/

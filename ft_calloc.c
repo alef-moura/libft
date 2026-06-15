@@ -6,13 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/07 14:33:29 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/12 17:35:05 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/15 13:45:54 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Reserva memória e inicializa com zero
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*p;
@@ -32,36 +31,3 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(p, total_size);
 	return (p);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	int	*array;
-	int	tamanho;
-	int	i;
-
-	tamanho = 4;
-
-	// Solicitando espaço para 4 inteiros (4 * 4 bytes = 16 bytes)
-	array = (int *)ft_calloc(tamanho, sizeof(long int));
-
-	if (array == NULL)
-	{
-		printf("Erro: A alocação normal falhou!\n\n");
-		return (1);
-	}
-
-	// Provando que a ft_bzero limpou tudo
-	i = 0;
-	while (i < tamanho)
-	{
-		printf("Posicao [%d]: %d (Esperado: 0)\n", i, array[i]);
-		i++;
-	}
-
-	// Sempre liberar a memória alocada com sucesso!
-	free(array);
-	printf("Memoria do Teste 1 liberada.\n\n");
-	return (0);
-}*/
