@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/09 11:54:54 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/14 20:30:10 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/15 11:10:03 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	ft_count_words(char const *s, char c)
 	return (count);
 }
 
-static char	*word_dup(char const *s, char c)
+static char	*ft_word_dup(char const *s, char c)
 {
 	size_t	len;
 	size_t	i;
@@ -53,7 +53,7 @@ static char	*word_dup(char const *s, char c)
 	return (w);
 }
 
-static void	free_arr(char **arr, size_t k)
+static void	ft_free_arr(char **arr, size_t k)
 {
 	while (k > 0)
 	{
@@ -63,7 +63,7 @@ static void	free_arr(char **arr, size_t k)
 	free(arr);
 }
 
-static int	split_loop(char **arr, char const *s, char c)
+static int	ft_split_loop(char **arr, char const *s, char c)
 {
 	size_t	i;
 	size_t	k;
@@ -76,10 +76,10 @@ static int	split_loop(char **arr, char const *s, char c)
 			i++;
 		if (s[i])
 		{
-			arr[k] = word_dup(s + i, c);
+			arr[k] = ft_word_dup(s + i, c);
 			if (!arr[k])
 			{
-				free_arr(arr, k);
+				ft_free_arr(arr, k);
 				return (0);
 			}
 			k++;
@@ -100,7 +100,7 @@ char	**ft_split(char const *s, char c)
 	arr = (char **)malloc((ft_count_words(s, c) + 1) * sizeof(char *));
 	if (!arr)
 		return (NULL);
-	if (!split_loop(arr, s, c))
+	if (!ft_split_loop(arr, s, c))
 		return (NULL);
 	return (arr);
 }
