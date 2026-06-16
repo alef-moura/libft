@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/14 13:39:20 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/14 18:12:03 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/15 23:32:12 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Cria uma nova string aplicando uma funçao
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t			len;

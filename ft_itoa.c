@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/14 11:57:18 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/14 14:15:16 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/15 23:29:38 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Converte int (40) em string ("40") [+0]
+
 static int	ft_get_len(int n)
 {
 	int	len;
@@ -54,29 +54,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-/*#include <stdio.h>
-#include <stdlib.h>
-
-int	main(void)
-{
-	// 1. Chamamos a função e guardamos as strings retornadas
-	char *teste1 = ft_itoa(42);
-	char *teste2 = ft_itoa(-105);
-	char *teste3 = ft_itoa(0);
-	char *teste4 = ft_itoa(-2147483648);
-
-	// 2. Imprimimos os resultados para verificar visualmente
-	printf("Teste 1 (Positivo) : %s\n", teste1);
-	printf("Teste 2 (Negativo) : %s\n", teste2);
-	printf("Teste 3 (Zero)     : %s\n", teste3);
-	printf("Teste 4 (INT_MIN)  : %s\n", teste4);
-
-	// 3. SEMPRE libere a memória que foi alocada pelo malloc!
-	free(teste1);
-	free(teste2);
-	free(teste3);
-	free(teste4);
-
-	return (0);
-}*/

@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 17:54:22 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/12 17:33:15 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/15 23:31:51 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Cola duas strings em uma terceira string
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*new_str;
@@ -29,17 +29,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcpy(new_str + len1, s2, len2 + 1);
 	return (new_str);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char	*s1 = "42";
-	char	*s2 = "Sao Paulo";
-	char	*resultado;
-
-	resultado = ft_strjoin(s1, s2);
-	printf("Resultado unido: %s \n", resultado);
-	free(resultado);
-	return (0);
-}*/
