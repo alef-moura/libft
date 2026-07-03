@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 18:28:23 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 23:32:33 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/07 13:39:08 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Procura uma substring dentro de outra string com limite de len
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	h;
@@ -33,3 +33,15 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	palheiro[] = "42SaoPaulo";
+	char	*resultado;
+
+	resultado = ft_strnstr(palheiro, "Sao", 10);
+	printf("%s \n", resultado);
+	return (0);
+}*/

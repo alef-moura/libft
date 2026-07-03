@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 15:46:39 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 23:32:21 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/22 13:49:52 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//compara duas strings até n caracteres
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
@@ -25,5 +25,16 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		i++;
 	}
+	return (0);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	int	resultado;
+
+	resultado = ft_strncmp("Porto", "Porco", 6);
+	printf("%d \n", resultado);
 	return (0);
 }

@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 13:07:55 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 16:01:10 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/26 20:32:26 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//preenche memória com um valor
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*s1;
@@ -26,3 +26,14 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	str[5] = "oie!";
+	printf("Antes: %s\n", str);
+	
+	ft_memset(str, '#', 1);
+	printf("Depois: %s\n", str);
+}*/

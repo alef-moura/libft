@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 17:44:34 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 23:30:36 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/08 11:37:00 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//compara blocos de memória até n 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*p1;
@@ -29,3 +29,16 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	s1[10] = "Hello";
+	char	s2[10] = "HelLo";
+	int		resultado;
+
+	resultado = ft_memcmp(s1, s2, 7);
+	printf("%d \n", resultado);
+	return (0);
+}*/

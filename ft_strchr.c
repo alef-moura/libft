@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 13:39:14 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 23:31:20 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/06 15:49:56 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Procura a primeira ocorrencia de um caractere
 char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
@@ -27,3 +27,15 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	frase[] = "Hello";
+	char	*result;
+
+	result = ft_strchr(frase, 'e');
+	printf("%s \n %p \n", result, (void *)result);
+	return (0);
+}*/

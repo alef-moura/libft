@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/06 17:01:30 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 23:30:24 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/10 17:45:10 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Procura um byte n na memoria
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t				i;
@@ -27,3 +27,15 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	memoria[] = "He\0o4l";
+	char	*resultado;
+	
+	resultado = ft_memchr(memoria, '4', 9);
+	printf("%s \n", resultado);
+	return (0);
+}*/

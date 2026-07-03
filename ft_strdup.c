@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 13:08:09 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 23:31:30 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/26 18:23:05 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//duplica uma string na memoria
 char	*ft_strdup(const char *s1)
 {
 	char	*clone;
@@ -24,3 +24,13 @@ char	*ft_strdup(const char *s1)
 	ft_strlcpy(clone, s1, len + 1);
 	return (clone);
 }
+
+/*int	main(void)
+{
+	char	or[] = "42Porto";
+	char	*clon;
+	
+	printf("Original antes: %s (Endereço: %p)\n", or, (void *)or);
+	clon = ft_strdup(or);
+	printf("Clone criado: %s, (Endereço: %p)\n", clon, (void *)clon);
+}*/

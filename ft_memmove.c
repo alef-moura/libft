@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 12:21:27 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 16:45:19 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/10 11:29:39 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Copia memoria com segurança em areas SOBREPOSTAS
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*pdest;
@@ -38,3 +38,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	text[20] = "abcdefg";
+
+	printf("Antes: %s\n", text);
+
+	ft_memmove(text + 2, text, 2);
+
+	printf("Depois: %s\n", text);
+
+	return (0);
+}*/

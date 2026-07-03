@@ -6,7 +6,7 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/14 21:17:55 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 23:29:00 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/15 19:01:13 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,33 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		lst = lst->next;
 	}
 	return (new_list);
+}
+//OUTRO JEITO
+
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+{
+	t_list	*new_content;
+	t_list	*new_node;
+	t_list	*new_lst;
+
+	if (!lst || !f || !del)
+		return (NULL);
+	while (lst)
+	{
+		new_content = f(lst->content);
+		if (!new_content)
+		{
+			ft_lstclear(&new_lst, del);
+			return (NULL);
+		}
+		new_node = ft_lstnew(new_content);
+		if (!new_node)
+		{
+			ft_lstclear(&new_lst, del);
+			return (NULL);
+		}
+		new_lst = ft_lstadd_back(&new_lst, new_node);
+		lst = lst->next;
+	}
+	return (new_lst);
 }

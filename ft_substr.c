@@ -6,12 +6,12 @@
 /*   By: alesferr <alesferr@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:57:31 by alesferr          #+#    #+#             */
-/*   Updated: 2026/06/15 23:33:01 by alesferr         ###   ########.fr       */
+/*   Updated: 2026/06/14 11:54:58 by alesferr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//Recorta uma parte especifica de um texto
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	s_len;
@@ -30,3 +30,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(substr, s + start, len + 1);
 	return (substr);
 }
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	*tx_org = "42Saopaulo";
+	char	*recorte;
+
+	recorte = ft_substr(tx_org, 2, 5);
+	printf("Original: %s \n", tx_org);
+	printf("Recorte: %s \n", recorte);
+	return (0);
+}*/
